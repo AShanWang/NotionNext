@@ -97,8 +97,6 @@ const CommonScript = () => {
               }}
       />
 
-<script defer data-domain="pengchao.eu.org" src="https://tj.ashanwpc.eu.org/js/script.js"></script>
-
     )}
 
     {/* 谷歌统计 */}
