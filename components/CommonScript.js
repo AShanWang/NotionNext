@@ -36,6 +36,11 @@ const CommonScript = () => {
                   `
       }}
       />
+
+      />
+      <script defer data-domain="pengchao.eu.org" src="https://tj.ashanwpc.eu.org/js/script.js"></script>
+      />
+        
     </>)}
 
     {BLOG.AD_WWADS_ID && <script type="text/javascript" charSet="UTF-8" src="https://cdn.wwads.cn/js/makemoney.js" async></script>}
