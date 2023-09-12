@@ -60,9 +60,6 @@ const CommonScript = () => {
                 `
       }}/>
     </>)}
-
-    <script defer data-domain="pengchao.eu.org" src="https://tj.ashanwpc.eu.org/js/script.js"></script>
-
      
     {/* 代码统计 */}
     {/* ackee统计脚本 */}
@@ -99,6 +96,9 @@ const CommonScript = () => {
               `
               }}
       />
+
+<script defer data-domain="pengchao.eu.org" src="https://tj.ashanwpc.eu.org/js/script.js"></script>
+
     )}
 
     {/* 谷歌统计 */}
