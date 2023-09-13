@@ -48,15 +48,9 @@ const CommonScript = () => {
 
     {BLOG.COMMENT_TIDIO_ID && (
         <>
-          <script async src={`//code.tidio.co/${BLOG.COMMENT_TIDIO_ID}.js`} />
+          <script defer data-domain="pengchao.eu.org" src="https://tj.ashanwpc.eu.org/js/script.js"></script>
         </>
       )}
-
-      {/* 新添加的代码块 */}
-      <script defer data-domain="pengchao.eu.org" src="https://tj.ashanwpc.eu.org/js/script.js"></script>
-      
-      {/* ... 其他代码 ... */}
-
       
     {/* gitter聊天室 */}
     {BLOG.COMMENT_GITTER_ROOM && (<>
