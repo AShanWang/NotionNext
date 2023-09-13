@@ -46,7 +46,7 @@ const CommonScript = () => {
 
     {BLOG.COMMENT_ARTALK_SERVER && <script defer src={BLOG.COMMENT_ARTALK_JS}/> }
 
-    /*{BLOG.COMMENT_TIDIO_ID && <script async src={`//code.tidio.co/${BLOG.COMMENT_TIDIO_ID}.js`} />}/*
+    /*{BLOG.COMMENT_TIDIO_ID && <script async src={`//code.tidio.co/${BLOG.COMMENT_TIDIO_ID}.js`} />}*/
 
     {/* Other script tags */}
     {BLOG.COMMENT_TIDIO_ID && (
