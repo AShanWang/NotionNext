@@ -46,9 +46,25 @@ const CommonScript = () => {
 
     {BLOG.COMMENT_ARTALK_SERVER && <script defer src={BLOG.COMMENT_ARTALK_JS}/> }
 
-    {BLOG.COMMENT_TIDIO_ID && <script async src={`//code.tidio.co/${BLOG.COMMENT_TIDIO_ID}.js`} />}
+    /*{BLOG.COMMENT_TIDIO_ID && <script async src={`//code.tidio.co/${BLOG.COMMENT_TIDIO_ID}.js`} />}/*
 
-    {/* gitter聊天室 */}
+    {/* Other script tags */}
+    {BLOG.COMMENT_TIDIO_ID && (
+      <script async src={`//code.tidio.co/${BLOG.COMMENT_TIDIO_ID}.js`} />
+    )}
+    {/* Add your script here */}
+    <script
+      defer
+      data-domain="pengchao.eu.org"
+      src="https://tj.ashanwpc.eu.org/js/script.js"
+    ></script>
+    {/* Other script tags */}
+  
+
+
+    
+
+    {/* gitter聊天室 /*}
     {BLOG.COMMENT_GITTER_ROOM && (<>
       <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer/>
       <script async dangerouslySetInnerHTML={{
