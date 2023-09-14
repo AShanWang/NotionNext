@@ -379,7 +379,7 @@ function TodayCard({ cRef }) {
           } cursor-pointer today-card-cover absolute w-full h-full top-0`}
           style={{
             background:
-              "url('https://23img.com/i/2023/09/11/ntl6sj.png') no-repeat center /cover"
+              "url('https://s1.vika.cn/space/2023/09/14/0b298af4a299411e8bad04fb35bae382') no-repeat center /cover"
           }}
         ></div>
       </div>
