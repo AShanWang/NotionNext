@@ -69,6 +69,13 @@ const CommonScript = () => {
       />
     )} */}
 
+     {/* Umami 统计脚本 */}
+          <script
+            async
+            src="https://umami.ashanwpc.eu.org/script.js"
+            data-website-id="f79380fa-38d9-4b77-9c99-46a2d365a759"
+          />
+     
     {/* 百度统计 */}
     {BLOG.ANALYTICS_BAIDU_ID && (
       <script async
