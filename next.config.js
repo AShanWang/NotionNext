@@ -41,7 +41,8 @@ module.exports = withBundleAnalyzer({
       'source.unsplash.com',
       'p1.qhimg.com',
       'webmention.io',
-      'i0.hdslb.com'
+      'i0.hdslb.com',
+      'hdslb.com'
     ]
   },
   // 默认将feed重定向至 /public/rss/feed.xml
