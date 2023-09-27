@@ -31,7 +31,7 @@ const themes = scanSubdirectories(path.resolve(__dirname, 'themes'))
 module.exports = withBundleAnalyzer({
   images: {
     // 图片压缩
-    formats: ['image/avif', 'image/webp','image/jpg','image/png'],
+    formats: ['image/avif', 'image/webp'],
     // 允许next/image加载的图片 域名
     domains: [
       'gravatar.com',
