@@ -36,6 +36,10 @@ module.exports = withBundleAnalyzer({
     domains: [
       'gravatar.com',
       'www.notion.so',
+      'amazon.com',
+      'us-west-2.amazon.com',
+      's3.us-west-2.amazonaws.com',
+      'prod-files-secure.s3.us-west-2.amazonaws.com',
       'www.amazon.com',
       'avatars.githubusercontent.com',
       'images.unsplash.com',
