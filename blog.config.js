@@ -587,13 +587,16 @@ const BLOG = {
   IMG_COMPRESS_WIDTH: process.env.NEXT_PUBLIC_IMG_COMPRESS_WIDTH || 800, // Notion图片压缩宽度
 
   // 作废配置
-  // AVATAR: process.env.NEXT_PUBLIC_AVATAR || 'https://img.gugu.ovh/i/2023/07/28/vknqn.webp', // 作者头像，被notion中的ICON覆盖。若无ICON则取public目录下的avatar.png
-  // TITLE: process.env.NEXT_PUBLIC_TITLE || '阿山的藏宝图', // 站点标题 ，被notion中的页面标题覆盖；此处请勿留空白，否则服务器无法编译
-  // HOME_BANNER_IMAGE:
-    // process.env.NEXT_PUBLIC_HOME_BANNER_IMAGE || '/bg_image.jpg', // 首页背景大图, 会被notion中的封面图覆盖，若无封面图则会使用代码中的 /public/bg_image.jpg 文件
-  // DESCRIPTION:
-    // process.env.NEXT_PUBLIC_DESCRIPTION || '试炼区-试水1号（半成品）', // 站点描述，被notion中的页面描述覆盖
-
+  AVATAR: process.env.NEXT_PUBLIC_AVATAR || '/avatar.svg', // 作者头像，被notion中的ICON覆盖。若无ICON则取public目录下的avatar.png
+  // https://img.gugu.ovh/i/2023/07/28/vknqn.webp
+  TITLE: process.env.NEXT_PUBLIC_TITLE || 'NotionNext BLOG', // 站点标题 ，被notion中的页面标题覆盖；此处请勿留空白，否则服务器无法编译
+  // 阿山的藏宝图
+  HOME_BANNER_IMAGE:
+    process.env.NEXT_PUBLIC_HOME_BANNER_IMAGE || '/bg_image.jpg', // 首页背景大图, 会被notion中的封面图覆盖，若无封面图则会使用代码中的 /public/bg_image.jpg 文件
+  DESCRIPTION:
+    process.env.NEXT_PUBLIC_DESCRIPTION || '这是一个由NotionNext生成的站点', // 站点描述，被notion中的页面描述覆盖
+// 试炼区-试水1号（半成品）
+  
   // 开发相关
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
   DEBUG: process.env.NEXT_PUBLIC_DEBUG || false, // 是否显示调试按钮
