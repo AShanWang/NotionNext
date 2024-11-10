@@ -6,7 +6,7 @@ const BLOG = {
     '02ab3b8678004aa69e9e415905ef32a5,en:7c1d570661754c8fbc568e00a01fd70e',
   PSEUDO_STATIC: process.env.NEXT_PUBLIC_PSEUDO_STATIC || false, // 伪静态路径，开启后所有文章URL都以 .html 结尾。
   NEXT_REVALIDATE_SECOND: process.env.NEXT_PUBLIC_REVALIDATE_SECOND || 5, // 更新内容缓存间隔 单位(秒)；即每个页面有5秒的纯静态期、此期间无论多少次访问都不会抓取notion数据；调大该值有助于节省Vercel资源、同时提升访问速率，但也会使文章更新有延迟。
-  THEME: process.env.NEXT_PUBLIC_THEME || 'simple', // 当前主题，在themes文件夹下可找到所有支持的主题；主题名称就是文件夹名，例如 example,fukasawa,gitbook,heo,hexo,landing,matery,medium,next,nobelium,plog,simple
+  THEME: process.env.NEXT_PUBLIC_THEME || 'heo', // 当前主题，在themes文件夹下可找到所有支持的主题；主题名称就是文件夹名，例如 example,fukasawa,gitbook,heo,hexo,landing,matery,medium,next,nobelium,plog,simple
   THEME_SWITCH: process.env.NEXT_PUBLIC_THEME_SWITCH || false, // 是否显示切换主题按钮
   LANG: process.env.NEXT_PUBLIC_LANG || 'zh-CN', // e.g 'zh-CN','en-US'  see /lib/lang.js for more.
   SINCE: process.env.NEXT_PUBLIC_SINCE || 2021, // e.g if leave this empty, current year will be used.
@@ -26,7 +26,7 @@ const BLOG = {
 
   AUTHOR: process.env.NEXT_PUBLIC_AUTHOR || 'NotionNext', // 您的昵称 例如 tangly1024
   BIO: process.env.NEXT_PUBLIC_BIO || '一个普通的干饭人🍚', // 作者简介
-  LINK: process.env.NEXT_PUBLIC_LINK || 'https://tangly1024.com', // 网站地址
+  LINK: process.env.NEXT_PUBLIC_LINK || 'https://pengchao.cloudns.org', // 网站地址
   KEYWORDS: process.env.NEXT_PUBLIC_KEYWORD || 'Notion, 博客', // 网站关键词 英文逗号隔开
 
   // 社交链接，不需要可留空白，例如 CONTACT_WEIBO:''
@@ -210,7 +210,7 @@ const BLOG = {
   // 所有支持的分享服务：link(复制链接),wechat(微信),qq,weibo(微博),email(邮件),facebook,twitter,telegram,messenger,line,reddit,whatsapp,linkedin,vkshare,okshare,tumblr,livejournal,mailru,viber,workplace,pocket,instapaper,hatena
 
   // 文章URL前缀
-  POST_URL_PREFIX: process.env.NEXT_PUBLIC_POST_URL_PREFIX ?? 'article',
+  POST_URL_PREFIX: process.env.NEXT_PUBLIC_POST_URL_PREFIX ?? '',
   // POST类型文章的默认路径前缀，例如默认POST类型的路径是  /article/[slug]
   // 如果此项配置为 '' 空， 则文章将没有前缀路径
   // 支援類似 WP 可自訂文章連結格式的功能：https://wordpress.org/documentation/article/customize-permalinks/，目前只先實作 %year%/%month%/%day%
@@ -310,18 +310,74 @@ const BLOG = {
   MUSIC_PLAYER_AUDIO_LIST: [
     // 示例音乐列表。除了以下配置外，还可配置歌词，具体配置项看此文档 https://aplayer.js.org/#/zh-Hans/
     {
-      name: '风を共に舞う気持ち',
+      name: '送你一朵小红花',
       artist: 'Falcom Sound Team jdk',
-      url: 'https://music.163.com/song/media/outer/url?id=731419.mp3',
+      url: 'https://music.163.com/song/media/outer/url?id=1813312517.mp3',
       cover:
-        'https://p2.music.126.net/kn6ugISTonvqJh3LHLaPtQ==/599233837187278.jpg'
+          'https://p1.music.126.net/LU-eaX1o6wQh4v9gmZpKXw==/109951165641882012.jpg'
     },
     {
-      name: '王都グランセル',
+      name: '阳光开朗大男孩 (女版)',
       artist: 'Falcom Sound Team jdk',
-      url: 'https://music.163.com/song/media/outer/url?id=731355.mp3',
+      url: 'https://music.163.com/song/media/outer/url?id=2029118797.mp3',
       cover:
-        'https://p1.music.126.net/kn6ugISTonvqJh3LHLaPtQ==/599233837187278.jpg'
+          'https://p2.music.126.net/OQCDZS8OmTfqVUeuY3FXrw==/109951168458031607.jpg'
+    },
+    {
+      name: '范进中举',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=1858118347.mp3',
+      cover:
+          'https://p2.music.126.net/yT3CoDPJKH7IbGKXPIyphg==/109951166141313308.jpg'
+    },
+    {
+      name: '我用什么把你留住',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=1306923998.mp3',
+      cover:
+          'https://p2.music.126.net/RMYmJlVF2Fuvg2hmJNlmHA==/109951167343222893.jpg'
+    },
+    {
+      name: '南三环东路',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=2052454512.mp3',
+      cover:
+          'https://p2.music.126.net/oEjZdksnQLrqLuDLWgoE2Q==/109951168652913819.jpg'
+    },
+    {
+      name: '我想，我想',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=28138269.mp3',
+      cover:
+          'https://p1.music.126.net/1t66r0JtFSjsGeiSj2qm-g==/5838406743611579.jpg'
+    },
+    {
+      name: '乐园',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=390536.mp3',
+      cover:
+          'https://p2.music.126.net/gb-gr5C--t-RLx3UQrXe5Q==/109951168485581710.jpg'
+    },
+    {
+      name: '志铭',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=2005708456.mp3',
+      cover:
+          'https://p2.music.126.net/tWgviz-imCloTvUqrMVpZA==/109951168135115539.jpg'
+    },
+    {
+      name: '若把你',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=865632948.mp3',
+      cover:
+          'https://p2.music.126.net/M877M2-VhWZiLPVFORf9iQ==/109951163401482434.jpg'
+    },
+    {
+      name: '向云端',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=2049512697.mp3',
+      cover:
+          'https://p2.music.126.net/TmOHxaGnFNlwNX8aPz66oA==/109951168638913915.jpg'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
@@ -353,7 +409,7 @@ const BLOG = {
     process.env.NEXT_PUBLIC_COMMENT_TWIKOO_COUNT_ENABLE || false, // 博客列表是否显示评论数
   COMMENT_TWIKOO_CDN_URL:
     process.env.NEXT_PUBLIC_COMMENT_TWIKOO_CDN_URL ||
-    'https://cdn.jsdelivr.net/npm/twikoo@1.6.17/dist/twikoo.all.min.js', // twikoo客户端cdn
+    'https://cdn.staticfile.net/twikoo/1.6.19/twikoo.min.js', // twikoo客户端cdn
 
   // utterance
   COMMENT_UTTERRANCES_REPO:
@@ -532,12 +588,12 @@ const BLOG = {
   IMG_COMPRESS_WIDTH: process.env.NEXT_PUBLIC_IMG_COMPRESS_WIDTH || 800, // Notion图片压缩宽度
 
   // 作废配置
-  AVATAR: process.env.NEXT_PUBLIC_AVATAR || '/avatar.svg', // 作者头像，被notion中的ICON覆盖。若无ICON则取public目录下的avatar.png
-  TITLE: process.env.NEXT_PUBLIC_TITLE || 'NotionNext BLOG', // 站点标题 ，被notion中的页面标题覆盖；此处请勿留空白，否则服务器无法编译
+  AVATAR: process.env.NEXT_PUBLIC_AVATAR || 'https://img.gugu.ovh/i/2023/07/28/vknqn.webp', // 作者头像，被notion中的ICON覆盖。若无ICON则取public目录下的avatar.png
+  TITLE: process.env.NEXT_PUBLIC_TITLE || '阿山的藏宝图', // 站点标题 ，被notion中的页面标题覆盖；此处请勿留空白，否则服务器无法编译
   HOME_BANNER_IMAGE:
     process.env.NEXT_PUBLIC_HOME_BANNER_IMAGE || '/bg_image.jpg', // 首页背景大图, 会被notion中的封面图覆盖，若无封面图则会使用代码中的 /public/bg_image.jpg 文件
   DESCRIPTION:
-    process.env.NEXT_PUBLIC_DESCRIPTION || '这是一个由NotionNext生成的站点', // 站点描述，被notion中的页面描述覆盖
+    process.env.NEXT_PUBLIC_DESCRIPTION || '试炼区-试水1号（半成品）', // 站点描述，被notion中的页面描述覆盖
 
   // 开发相关
   NOTION_ACCESS_TOKEN: process.env.NOTION_ACCESS_TOKEN || '', // Useful if you prefer not to make your database public
