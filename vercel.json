@@ -1,5 +1,13 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "headers": []
+  "headers": [],
+  "build": {
+    "env": {
+      "NODE_VERSION": "18.x",
+      "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/",
+      "YARN_REGISTRY": "https://registry.npmjs.org/",
+      // "NODE_TLS_REJECT_UNAUTHORIZED": "0"  // 禁用 SSL 校验（仅用于测试环境）
+    }
+  }
 }
