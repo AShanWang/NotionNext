@@ -13,6 +13,7 @@
     "url": "http://tangly1024.com"
   },
   "scripts": {
+    "preinstall": "echo \"Using Taobao registry\""
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
