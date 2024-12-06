@@ -4,7 +4,7 @@
   "headers": [],
   "build": {
     "env": {
-      "NODE_VERSION": "18.x",
+      "NODE_VERSION": "20.x",
       "NPM_CONFIG_REGISTRY": "https://registry.npmjs.org/",
       "YARN_REGISTRY": "https://registry.npmjs.org/",
       // "NODE_TLS_REJECT_UNAUTHORIZED": "0"  // 禁用 SSL 校验（仅用于测试环境）
