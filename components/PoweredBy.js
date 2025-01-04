@@ -8,11 +8,11 @@ export default function PoweredBy(props) {
   return (
     <div
       className={`gap-x-1 flex flex-wrap text-sm font-serif ${props.className || ''}`}>
-      <span>Powered by</span>
+      <span>➤ </span>
       <a
-        href='https://github.com/tangly1024/NotionNext'
+        href='https://jyjc.cloudns.org'
         className='underline justify-start'>
-        NotionNext {siteConfig('VERSION')}
+        用心做好每一期教程！
       </a>
       .
     </div>
