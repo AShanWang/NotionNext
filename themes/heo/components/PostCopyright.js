@@ -16,7 +16,7 @@ export default function PostCopyright() {
     setPath(window.location.href)
   })
 
-  // const { locale } = useGlobal()
+  const { locale } = useGlobal()
 
   if (!siteConfig('HEO_ARTICLE_COPYRIGHT', null, CONFIG)) {
     return <></>
