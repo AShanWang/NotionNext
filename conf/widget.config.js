@@ -37,18 +37,74 @@ module.exports = {
   MUSIC_PLAYER_AUDIO_LIST: [
     // 示例音乐列表。除了以下配置外，还可配置歌词，具体配置项看此文档 https://aplayer.js.org/#/zh-Hans/
     {
-      name: '风を共に舞う気持ち',
+      name: '送你一朵小红花',
       artist: 'Falcom Sound Team jdk',
-      url: 'https://music.163.com/song/media/outer/url?id=731419.mp3',
+      url: 'https://music.163.com/song/media/outer/url?id=1813312517.mp3',
       cover:
-        'https://p2.music.126.net/kn6ugISTonvqJh3LHLaPtQ==/599233837187278.jpg'
+          'https://p1.music.126.net/LU-eaX1o6wQh4v9gmZpKXw==/109951165641882012.jpg'
     },
     {
-      name: '王都グランセル',
+      name: '阳光开朗大男孩 (女版)',
       artist: 'Falcom Sound Team jdk',
-      url: 'https://music.163.com/song/media/outer/url?id=731355.mp3',
+      url: 'https://music.163.com/song/media/outer/url?id=2029118797.mp3',
       cover:
-        'https://p1.music.126.net/kn6ugISTonvqJh3LHLaPtQ==/599233837187278.jpg'
+          'https://p2.music.126.net/OQCDZS8OmTfqVUeuY3FXrw==/109951168458031607.jpg'
+    },
+    {
+      name: '范进中举',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=1858118347.mp3',
+      cover:
+          'https://p2.music.126.net/yT3CoDPJKH7IbGKXPIyphg==/109951166141313308.jpg'
+    },
+    {
+      name: '我用什么把你留住',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=1306923998.mp3',
+      cover:
+          'https://p2.music.126.net/RMYmJlVF2Fuvg2hmJNlmHA==/109951167343222893.jpg'
+    },
+    {
+      name: '南三环东路',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=2052454512.mp3',
+      cover:
+          'https://p2.music.126.net/oEjZdksnQLrqLuDLWgoE2Q==/109951168652913819.jpg'
+    },
+    {
+      name: '我想，我想',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=28138269.mp3',
+      cover:
+          'https://p1.music.126.net/1t66r0JtFSjsGeiSj2qm-g==/5838406743611579.jpg'
+    },
+    {
+      name: '乐园',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=390536.mp3',
+      cover:
+          'https://p2.music.126.net/gb-gr5C--t-RLx3UQrXe5Q==/109951168485581710.jpg'
+    },
+    {
+      name: '志铭',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=2005708456.mp3',
+      cover:
+          'https://p2.music.126.net/tWgviz-imCloTvUqrMVpZA==/109951168135115539.jpg'
+    },
+    {
+      name: '若把你',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=865632948.mp3',
+      cover:
+          'https://p2.music.126.net/M877M2-VhWZiLPVFORf9iQ==/109951163401482434.jpg'
+    },
+    {
+      name: '向云端',
+      artist: 'Falcom Sound Team jdk',
+      url: 'https://music.163.com/song/media/outer/url?id=2049512697.mp3',
+      cover:
+          'https://p2.music.126.net/TmOHxaGnFNlwNX8aPz66oA==/109951168638913915.jpg'
     }
   ],
   MUSIC_PLAYER_METING: process.env.NEXT_PUBLIC_MUSIC_PLAYER_METING || false, // 是否要开启 MetingJS，从平台获取歌单。会覆盖自定义的 MUSIC_PLAYER_AUDIO_LIST，更多配置信息：https://github.com/metowolf/MetingJS
